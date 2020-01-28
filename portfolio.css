@@ -1,0 +1,89 @@
+/*header styles */
+header.box1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+}
+#logo {
+    float: left;
+}
+h1,h4 {
+    padding: 0px;
+    margin: 0px;
+    text-align:right;
+}
+hr {
+    color:#808080;
+    background-color:#808080;
+    height: 2px;
+    width:100%;
+}
+/* main class styles */
+#cover {
+    width: 100%;
+    overflow: hidden;
+}
+h2 {
+    color:#696969;
+}
+.box5 {
+  display: flex;
+  flex-flow: row wrap;
+}
+.box5 .box6,.box7,.box8 {
+  background: #ffffff;
+  width:32%;
+  padding:1em;
+  text-align:center;
+  box-shadow: 0 2px 0 #D9E1E7;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border-radius: 3px;
+}
+.box5 .box6,.box7,.box8 img{
+  border-radius: 3px 3px 0 0;
+}
+.box5 .box6,.box7,.box8 .text{
+  padding: 1.25rem;
+}
+.box5 .box6,.box7,.box8 h3 {
+  font-size:18px;
+  color:#444444;
+}
+/* End stylying for portfolio items*/
+footer {
+  max-width:980px;
+  margin:0 auto;
+  padding:10px 20px;
+}
+/* making my portfolio responsive */
+/* laptop and desktop */
+@media only screen and (min-width : 1224px) and (orientation : landscape) {
+    body{
+        background-color:#F0FFFF;
+    }
+}
+/* ipad */
+@media only screen and (min-width : 400px) and (max-width : 800px) {
+    body{
+        background-color: #F5F5DC;
+    }
+    .box5 .box6,.box7,.box8{
+        width:99%;
+        margin-bottom:20px;
+    }
+}
+/*google nexus 5 */
+@media only screen and (max-width:400px) {
+    .box5 .box6,.box7,.box8{
+    width:99%;
+    margin-bottom:20px;
+  }
+}
+
+
+
+
+
